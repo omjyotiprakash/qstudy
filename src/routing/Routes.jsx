@@ -5,6 +5,7 @@ import Contact from '../pages/Contact'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from '../layout/Layout';
 import Subjects from '../pages/Subjects';
+import SubjectPage from '../pages/Subjectpage';
 
 const Routes = () => {
 
@@ -18,6 +19,7 @@ const Routes = () => {
                 { path: "questions", element: <Questions /> },
                 { path: "contact", element: <Contact /> },
                 { path: "subjects", element: <Subjects /> },
+                { path: "subjectpage", element: <SubjectPage /> },
             ]
         }
     ])
