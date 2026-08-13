@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { CaretLeft, CaretRight } from "@phosphor-icons/react"
 import { SiHtml5, SiCss, SiJavascript, SiReact, SiNodedotjs, SiExpress, SiMongodb } from "react-icons/si"
+import { Link } from "react-router-dom";
 
 const ORBIT_ICONS = [
   { icon: SiReact, top: "4%", left: "50%", size: 68, bg: "bg-white", color: "#61DAFB" },
@@ -217,12 +218,12 @@ export default function Home() {
                 From fundamental concepts to advanced topics, everything you
                 need is here.
               </p>
-              <button
+              <Link to={'/subjects'}
                 className="rounded-md bg-[#e8533a] px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
         </div>
