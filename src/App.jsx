@@ -1,12 +1,8 @@
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import Routes from "./routing/Routes";
 
 const App = () => {
   return (
-    <div>
-      {/* <Navbar/> */}
-      <Footer/>
-    </div>
+    <Routes/>
   )
 }
 
