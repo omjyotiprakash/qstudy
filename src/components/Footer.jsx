@@ -11,7 +11,7 @@ const SOCIALS = [
   const Footer = () => {
   return (
     <footer className="border-t-4 border-[#e8533a] bg-[#161616]">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 py-14 sm:grid-cols-2 md:grid-cols-4">
+      <div className="mx-auto grid max-w-6xl grid-cols-4 gap-4 px-6 py-14 sm:gap-10">
         <div className="flex flex-col items-start gap-4">
           <div className="flex h-24 w-24 items-center justify-center rounded-full bg-black">
             <span className="text-center text-sm font-extrabold leading-tight text-white">Q<br />Study</span>
@@ -34,7 +34,7 @@ const SOCIALS = [
         </div>
 
         <div>
-          <h4 className="mb-4 text-lg font-semibold text-white font-bold">Quick Links</h4>
+          <h4 className="mb-4 text-lg text-white font-bold">Quick Links</h4>
           <ul className="flex flex-col gap-3">
             {QUICK_LINKS.map((link) => (
               <li key={link}>
@@ -61,7 +61,7 @@ const SOCIALS = [
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
 export default Footer
